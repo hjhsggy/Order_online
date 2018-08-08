@@ -1,0 +1,29 @@
+.container{width:1200px; height:auto; background:#CCC; text-align:center; margin:0 auto;}
+.header{width:1200px; height:60px; float:left; background:#03C;}
+.middle{width:1200px; height:600px; float:left; background:#FFF; text-align:left;}
+.left{ width:200px; height:600px; float:left; background:#999; border:medium;}
+.menu{width:150px; height:160px; background-color:#FFF; border-radius:10%; float:left; margin:20px; padding-top:10px; text-align:center;}
+.history{width:150px; height:50px; background-color:#FFF; border-radius:10%; float:left; margin:20px; padding-top:20px; text-align:center;}
+.count{width:150px; height:50px; background-color:#FFF; border-radius:10%; float:left; margin:20px; padding-top:20px; text-align:center;}
+.right{width:990px; height:600px; float:left;overflow:scroll;}
+.right_title{width:990px; height:30px; font-family:Verdana, Geneva, sans-serif; font-size:20px; text-align:center;}
+.right_bottom{width:990px;height:auto;position:relative;left:5px;cursor:default;}
+.right_bottom::-webkit-scrollbar {display:none}
+.right_bottom ul{width:990px;height:auto;position:relative;right:33px;bottom:9px;}
+.right_bottom ul li{width:230px;height:200px;position:relative;float:left;margin:0px 5px 5px 0px;border:#000000 1px solid;}
+.right_bottom ul li .open{background:#CCCCCC;width:200px;height:100px;position:relative;top:5px;margin:0 auto;cursor:pointer;}
+.right_bottom ul li .open img{width:200px;height:100px;}
+.right_bottom ul li .food_name{width:200px;height:24px;position:relative;top:10px;margin:0 auto;font-size:18px;text-align:center;}
+.right_bottom ul li .count{width:200px;height:18px;position:relative;top:15px;margin:0 auto;font-size:18px;text-align:center;}
+.right_bottom ul li .begin{
+	width:150px;height:35px;position:relative;top:20px;margin:0 auto;
+	line-height:35px;font-size:20px;text-align:center;cursor:pointer;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+.left_title{width:120px; height:20px; float:left; margin-left:25px; margin-top:10px;}
+.foot{width:120px; height:auto; float:left; margin-left:20px;}
+.bottom{width:1200px; height:60px; float:left; background:#9CC; border:#0CF;}

@@ -1,0 +1,18 @@
+package com.order.online.dao;
+
+import com.order.online.domain.specialtyBean;
+import java.util.List;
+
+public interface IspecialtyDao {
+	
+	public List<specialtyBean> GetSpecialty();
+	
+	public specialtyBean getObject(String id);
+	
+	public int AddSpecialty(specialtyBean specialty);
+	
+	public int ModSpecialty(specialtyBean specialty);
+	
+	public int DelSpecialty(specialtyBean specialty);
+
+}
