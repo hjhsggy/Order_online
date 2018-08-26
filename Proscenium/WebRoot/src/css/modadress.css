@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */ 
+.main_title{
+position:relative;
+width:800px;
+height:50px;
+font-size:36px;
+left:50px;
+text-align:center;
+overflow:hidden;
+}
+.main_use{
+	cursor: default;
+	position: relative;
+	float: left;
+	width: 800px;
+	overflow: hidden;
+	margin-top: 50px;
+	border-style: solid 2px;
+
+	}
+.tables{
+position:relative;
+float:left;
+width:700px;
+height:auto;
+font-size:24px;
+left:50px;
+overflow:hidden;
+}
+.tables_add{
+	position:relative;
+    float:left;
+	left:350px;
+	width:150px;
+	height:50px;
+	text-align:center;
+	font-size:24px;
+	overflow:hidden;
+	}
+.left_1
+{cursor:default;
+position:relative;
+font-size:36px;
+top:40px;
+width:200px;
+height:auto;
+float:left;
+
+text-align:center;
+}}

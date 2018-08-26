@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>咥了么-咥你所想，咥你所爱</title>
+<link href="src/css/index.css" rel="stylesheet" type="text/css">
+<link href="src/css/head.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<script src="src/js/jquery-1.11.1.min.js"></script>
+<script src="src/js/index.js"></script>
+</head>
+
+
+
+<body>
+<!--登陆隐藏窗 -->
+<div class="title_login" id="login">
+  <div class="title_login_popup">
+  <div class="title_login_logo"></div>
+    <div class="name">用户登录　　　 　　<a href="#" onClick="login_popdown()" style="color:#339900">×</a></div>
+    <form action="" method="post">
+        <input id="username" name="username" type="text" class="username" placeholder="请输入账号/手机号">
+        <input id="password" name="password" type="password" class="password" placeholder="请输入密码">
+      <div class="save">没有账号？<a href="register.jsp">立即注册</a>　　<a href="#">忘记密码？</a>
+      </div>
+        <input name="login" type="submit" value="登　陆" class="loginbuttom">
+    </form>
+    <div class="error"></div>
+  </div>
+</div>
+<script type="text/javascript"> 
+function login_popup() {
+	login.style.display = "block";
+}
+
+function login_popdown() {
+	login.style.display = "none";
+}
+
+function openindex() {
+	if($("#name").html() == ""){
+	   
+	   login.style.display = "block";
+	   food.style.display = "none";
+	   
+	}else{
+	window.location.href = "people_index";
+	}
+}
+function quit(){
+    $.ajax({                  
+	    url: 'useSession',  
+	    type:'GET',             
+	    dataType: 'text',                  
+	    data: $("form").serialize(),                  
+	    success: function () {                                                 
+	    title_1.style.display = "none";
+	    title_2.style.display = "none";
+	    title_3.style.display = "block"; 
+	    title_4.style.display = "block";                                         
+	    }
+    });    
+}
+$(document).ready(function(){
+
+$.ajax({                  
+			   url: 'customlogin',  
+			   type:'GET',             
+			   dataType: 'text',                  
+			   data: $("form").serialize(),                  
+			   success: function (msg) {                      
+			   if (msg != "error"){   
+			        $("span#name")[0].innerHTML=msg;                         
+					title_1.style.display = "block";
+					title_2.style.display = "block";
+					title_3.style.display = "none"; 
+					title_4.style.display = "none";                                         
+				}  
+			   }
+			});    
+
+
+
+
+
+	 $("form").submit(function (){
+	  if ($("#username").val() == '' || $("#password").val() == ''){ 
+		  $("div.error").html("帐号和密码不能为空!");
+		  return false; 
+		  }else{   
+		  $("div.error").html("");            
+		   $.ajax({                  
+			   url: 'customlogin', 
+			   type:'post',      //处理测试页面,注意返回内容，成功返回OK                  
+			   dataType: 'text',                  
+			   data: $("form").serialize(),                  
+			   success: function (msg) {                      
+			   if (msg == "error"){ 
+				  $("div.error").html("帐号或密码错误，请您重新输入!");
+			   }else{                          
+					$("div.error").html(msg);
+					login.style.display = "none"; 
+					$("span#name")[0].innerHTML=msg; 
+					title_1.style.display = "block";
+					title_2.style.display = "block";
+					title_3.style.display = "none"; 
+					title_4.style.display = "none";                         
+					}                  
+				}        
+			});          
+		 }        
+	return false;  
+	});
+});
+</script>
+  
+<!--版头 -->
+<div class="title">
+  <a href="index.html"><div class="title_logo">  </div></a>
+  <div class="title_welcome">欢迎使用网上订餐系统！</div>
+  <div class="title_title">
+    <div class="title_title_register" id="title_1" style="display:none;">欢迎您<span id="name"></span></div>
+    <div class="title_title_login" id="title_2" style="display:none;"><a href="javascript:void(0);" onClick="quit()">注销</a></div>
+    <div class="title_title_register" id="title_3"><a href="register.jsp">注册</a></div>
+    <div class="title_title_login" id="title_4"><a href="javascript:void(0);" onClick="login_popup()">登陆</a></div>
+    <div class="title_title_order"><a href="chaxun.jsp">订单查询</a></div>
+    <div class="title_title_collection"><a href="javascript:void(0);" onclick="AddFavorite('百度','http://www.baidu.com')" title="收藏本站到收藏夹">收藏我们</a></div>
+  </div>
+  <div class="title_functiongroup">
+    <a href="index.html"><div class="index"><div class="txt">首　　页</div></div></a>
+    <a href="menu?tID=1"><div class="index"><div class="txt">浏览菜品</div></div></a>
+    <a href="javascript:void(0);" onClick="openindex()"><div class="index"><div class="txt">我的主页</div></div></a>
+    <a href="help.html"><div class="index"><div class="txt">帮助中心</div></div></a>
+  </div>
+</div>
+<script type="text/javascript">
+function AddFavorite(title, url) {
+	try {window.external.addFavorite(url, title);}
+	catch (e) 
+	{
+		try {window.sidebar.addPanel(title, url, "");}
+		catch (e) 
+		{
+			alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+		}
+	}
+}
+</script>
+
+<div class="line"></div>
+<div class="container">
+  <div class="banner" id="img">
+	<ul>
+      <li class="slider_item"><a href="#"><img src="src/img/01.jpg" width="1024" height="480" ><span class="slider_title"><em>西冷牛排今日特惠，仅售￥998</em></span></a></li>
+      <li class="slider_item"><a href="#"><img src="src/img/02.jpg" width="1024" height="480" ><span class="slider_title"><em>超值早餐套餐仅售￥1024</em></span></a></li>
+      <li class="slider_item"><a href="#"><img src="src/img/03.jpg" width="1024" height="480" ><span class="slider_title"><em>这是啥玩意我也不知道</em></span></a></li>
+      <li class="slider_item"><a href="#"><img src="src/img/04.jpg" width="1024" height="480" ><span class="slider_title"><em>牛肉汉堡￥688</em></span></a></li>
+      <li class="slider_item"><a href="#"><img src="src/img/05.jpg" width="1024" height="480" ><span class="slider_title"><em>薯条仅售￥388</em></span></a></li>
+	</ul>
+	<div class="progress"></div>
+	<a href="javascript:void(0);" class="index_image prev"><img class="arrow" id="al" src="src/img/arrowl.png" alt="prev" width="20" height="35"></a>
+	<a href="javascript:void(0);" class="index_image next"><img class="arrow" id="ar" src="src/img/arrowr.png" alt="next" width="20" height="37"></a>
+    </div>
+</div>
+
+
+<div class="order">
+  <a href="menu?tID=2"><div class="order_food"><div class="txt">早　餐</div></div></a>
+  <a href="menu?tID=3"><div class="order_food"><div class="txt">正　餐</div></div></a>
+  <a href="menu?tID=5"><div class="order_food"><div class="txt">夜　宵</div></div></a>
+  <a href="menu?tID=4"><div class="order_food"><div class="txt">下午茶</div></div></a>
+  <a href="menu?tID=1"><div class="order_food"><div class="txt">套　餐</div></div></a>
+</div>
+<div class="line1"></div>
+
+<div class="last">
+	<div class="pic"></div>
+	<div class="tel">订餐电话：123456789</div>
+	<div class="detail">咥了么宅急送不同时段产品品项及价格有所不同。工作日特惠午餐只在部分时段供应。详情以输入送餐地址后显示的实际供应的菜单为准</div>
+	<span class="list">|&nbsp;&nbsp;&nbsp;&nbsp;<a href="">帮助中心</a></span>
+	<span class="list">|&nbsp;&nbsp;&nbsp;&nbsp;<a href="">会员中心</a></span>
+	<span class="list">|&nbsp;&nbsp;&nbsp;&nbsp;<a href="">网站条款</a></span>
+	<span class="list">|&nbsp;&nbsp;&nbsp;&nbsp;<a href="">站点首页</a>&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+	<div class="copyright">版权所有 鄠邑区西安石油大学计算机学院</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+.container{width:1024px;height:auto;position:relative;top:8px;margin:0 auto;overflow: hidden}
+.menu{width:200px;height:498px;position:relative;float:left;border:#000000 1px solid;}
+.none{display:none;}
+.menu ul li .type{width:200px;height:35px;position:relative;right:40px;
+    border-top:#000000 1px dotted;border-bottom:#000000 1px dotted;text-align:center;font-size:24px;cursor:default;}
+.menu ul li p{width:200px;position:relative;right:40px;text-align:center;}
+
+.dish{width:655px;height:650px;position:relative;left:5px;overflow: auto;cursor:default;}
+.dish::-webkit-scrollbar {display:none}
+.dish ul{width:655px;height:auto;position:relative;right:33px;bottom:9px;}
+.dish ul li{width:210px;height:200px;position:relative;float:left;margin:0px 5px 5px 0px;border:#000000 1px solid;}
+.dish ul li .open{background:#CCCCCC;width:200px;height:100px;position:relative;top:5px;margin:0 auto;cursor:pointer;}
+.dish ul li .open img{width:200px;height:100px;}
+.dish ul li .food_name{width:200px;height:24px;position:relative;top:10px;margin:0 auto;font-size:18px;text-align:center;}
+.dish ul li .count{width:200px;height:18px;position:relative;top:15px;margin:0 auto;font-size:18px;text-align:center;}
+.dish ul li .begin{
+	background:#87CEEB;width:150px;height:35px;position:relative;top:20px;margin:0 auto;
+	line-height:35px;font-size:20px;text-align:center;cursor:pointer;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+
+.foodinfo_popup{
+	background:#FFFFFF;
+	width:600px;
+	height:400px;
+	position:relative;
+	top:150px;
+	margin:0 auto;
+	z-index:99999;
+	overflow:hidden;
+	cursor:default;
+}
+.foodinfo_popup_picture{
+	background:#EEEEEE;
+	width:300px;
+	height:200px;
+	position:relative;
+	float:left;
+}
+
+.foodinfo_popup_name{
+	width:265px;
+	height:35px;
+	position:relative;
+	float:left;
+	top:10px;
+	margin:0 auto;
+	font-family:"隶体";
+	font-size:28px;
+	color:#FF0000;
+	border-bottom:#FF0000 2px solid;
+	cursor:default;
+}
+.foodinfo_popup_x{
+	width:35px;
+	height:35px;
+	position:relative;
+	float:right;
+	margin:0 auto;
+	bottom:27px;
+	font-family:"隶体";
+	font-size:28px;
+	color:#FF0000;
+	border-bottom:#FF0000 2px solid;
+	cursor:default;
+}
+
+.foodinfo_popup_info{
+	width:260px;
+	height:145px;
+	position:relative;
+	float:left;
+	left:20px;
+	margin:0 auto;
+	
+}
+.foodinfo_popup_other{
+	width:560px;
+	height:60px;
+	position:relative;
+	float:left;
+	left:20px;
+	top:20px;
+	margin:0 auto;
+}
+.foodinfo_popup_count{
+	width:510px;
+	height:50px;
+	position:relative;
+	float:left;
+	left:45px;
+	top:15px;
+	margin:0 auto;
+	text-align:center;
+}
+.foodinfo_popup_buttom{
+	background:#FF0000;
+	width:140px;
+	height:40px;
+	position:relative;
+	float:left;
+	left:230px;
+	margin:0 auto;
+	text-align:center;
+	font-family:"隶体";
+	font-size:28px;
+	color:#FFFFFF;
+	}
+	.foodinfo_popup_buttom:hover{
+		border:1px solid #FF1111;
+	}
+
+
+.explain{border:1px #87CEEB solid;width:156px;height:500px;position:relative;float:right;}
+
+.shopping{background:url(../img/shopping.png) no-repeat;width:50px;height:50px;position:fixed;right:0;bottom:25px;z-index:900;text-align:center;}
+#shopping{width:50px;height:50px;border:1px red solid;}
+#shopping_ok{background:#CCCCCC url(../img/shopping.png) no-repeat;border:1px red solid;width:250px;display:none;font-family:"隶体";font-size:28px;cursor:default;}
+.shopping_list{background:#FFFFFF;border:1px red solid;position:fixed;right:0;bottom:75px;width:250px;height:auto;display:none;cursor:default;z-index:500;}
+.shopping_title{background:#FFFFFF;width:250px;height:40px;border-bottom:1px red solid;font-family:"隶体";font-size:28px;text-align:center;}
+.shopping_food{width:250px;height:20px;border-bottom:1px red solid;overflow:hidden;}
+.shopping_foodname{width:120px;height:20px;float:left;}
+.shopping_fooddel{width:20px;height:20px;float:left;}
+.shopping_foodshuliang{width:20px;height:20px;float:left;}
+.shopping_foodadd{width:20px;height:20px;float:left;}
+.shopping_foodcount{width:50px;height:20px;float:left;}
+.car{width:180px;height:50px;float:left;}
+.buy{background:#FFF;height:50px;float:right;}
+a{text-decoration: none;color:#000000;}
+ul li{display:inline}

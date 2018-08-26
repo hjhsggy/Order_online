@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+
+.line1{
+	background:#87CEEB;
+	width:1024px;
+	height:4px;
+	position:relative;
+	bottom:2px;
+	margin:0 auto;
+}
+
+
+.container{
+	background:#DDDDDD;
+	width:1024px;
+	height:469px;
+	position:relative;
+	top:4px;
+	margin:0 auto;
+	overflow:hidden;
+}
+ul, li{list-style: none;padding:0px;}
+.banner{position:relative;overflow: hidden;bottom:16px;text-align: center;}
+.banner .dots{position:absolute;left:0;right:0;bottom:50px;z-index:3;}
+.banner .dots li{
+	display:inline-block;
+	width:10px;
+	height:10px;
+	margin:0 4px;
+	text-indent:-999em;
+	border:2px solid #fff;
+	border-radius:6px;
+	cursor:pointer;
+	opacity:.4;
+	-webkit-transition:background .5s,opacity .5s;
+	-moz-transition:background .5s,opacity .5s;
+	transition:background .5s,opacity .5s
+}
+.banner .dots li.active{background:#fff;opacity:1}
+.banner .arrow{
+	position:absolute;
+	width:20px;
+	height:37px;
+	top: 50%;
+	margin-top: -18px;
+	overflow: hidden;
+	z-index: 2;
+	-webkit-transition: all 0.5s; 
+	-moz-transition: all 0.5s; 
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.banner #al{left:15px}
+.banner #ar{right:15px}
+.banner ul{width:600%;z-index:1;overflow:hidden;}
+.banner ul .slider_item {width:1024px; float: left;height:480px; position: relative; overflow: hidden;}
+.banner ul .slider_item .slider_title {
+	background:#111111;
+	width:1024px;
+	max-height:56px;
+	padding:15px;
+	position:absolute;
+	left: 0;
+	bottom: 0px;
+	text-align:left;
+	line-height: 28px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	background: -webkit-linear-gradient(top, transparent, rgba(0,0,0,0.9));
+	opacity:0.9;
+}
+.banner .progress{background:#f60;width:15%;min-height:3px;position:absolute;left:0;bottom:0;overflow:hidden;z-index:2;}
+
+.order{
+	background:#0E1A49;
+	width:1024px;
+	height:93px;
+	position:relative;
+	bottom:6px;
+	margin:0 auto;
+	cursor:pointer;
+	z-index:9;
+}
+
+.order_food{
+	background:#87CEEB;
+	width:202px;
+	height:90px;
+	position:relative;
+	float:left;
+	left:2px;
+	text-align:center;
+	font-size:16px;
+	border-style:solid;
+	border-top-style:none;
+	border-width:1px;
+	border-color:#0E1A49;
+	box-shadow:#999999 0 0 1px 1px ;
+}
+.order_food:hover{background:linear-gradient(180deg,#FFFFFF, #87CEEB 50%);}
+.order_food .txt{height:16px;position:relative;top:37px;color:#111111;}
+
+
+
+a{text-decoration: none;color:#000000;}

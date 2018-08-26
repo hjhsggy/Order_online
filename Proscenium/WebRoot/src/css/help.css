@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+.container{width:1024px;height:auto;position:relative;margin:0 auto;}
+
+.help_me{width:250px;height:auto;position:relative;float:left;cursor:pointer;}
+h3{width:250px;position:relative;bottom:40px;font-family:"隶书";font-size:48px;text-align:center;}
+.help_me .txt{width:200px;height:70px;position:relative;left:50px;font-family:"楷体";font-size:24px;text-align:center;}
+.help_me .txt .bor{width:150px;height:40px;position:relative;left:50px;top:15px;line-height:40px;border:#000000 1px dotted;}
+.help_me .txt .bor:hover{background:#87CEEB;}
+.help_me .txt .use{background:#87CEEB;}
+.vertical{background:#87CEEB;width:4px;height:539px;position:relative;float:left;}
+
+.answer{width:740px;height:auto;min-height:360px;position:relative;float:left;border-left:#87CEEB 4px solid;}
+
+.answer_con{text-align:center;position:relative;left:5px;}
+.answer_con p{text-align:left;}
+.answer_top{width:740px;height:86px;position:relative;top:5px;left:5px;}
+.on{background:#FFFFFF;}
+
+span{float:left;margin:0px 2px 4px 0px; font-size:14px;}
+.answer_top a{height:28px; line-height:28px;color:#FFF;display:inline-block;}
+
+.answer_top .qa_1 a{background-color:#f3666e; border:1px #f3666e solid;}
+.answer_top .qa_1 a:hover{ background-color:#FFFFFF; border:1px #f3666e solid; color:#f3666e;}
+.answer_top .qa_1 a.on{ background-color:#FFFFFF; border:1px #f3666e solid; color:#f3666e;}
+
+.answer_top .qa_2 a{background-color:#f0323c; border:1px #f0323c solid;}
+.answer_top .qa_2 a:hover{ background-color:#FFF; border:1px #f0323c solid; color:#f0323c;}
+.answer_top .qa_2 a.on{ background-color:#FFF; border:1px #f0323c solid; color:#f0323c;}
+
+.answer_top .qa_3 a{background-color:#eb000b; border:1px #eb000b solid;}
+.answer_top .qa_3 a:hover{ background-color:#FFF; border:1px #eb000b solid; color:#eb000b;}
+.answer_top .qa_3 a.on{ background-color:#FFF; border:1px #eb000b solid; color:#eb000b;}
+
+.answer_top .qa_4 a{background-color:#c9000a; border:1px #c9000a solid;}
+.answer_top .qa_4 a:hover{ background-color:#FFF; border:1px #c9000a solid; color:#c9000a;}
+.answer_top .qa_4 a.on{ background-color:#FFF; border:1px #c9000a solid; color:#c9000a;}
+
+.answer_top .qa_5 a{background-color:#960105; border:1px #960105 solid;}
+.answer_top .qa_5 a:hover{ background-color:#FFF; border:1px #960105 solid; color:#960105;}
+.answer_top .qa_5 a.on{ background-color:#FFF; border:1px #960105 solid; color:#960105;}
+
+.answer_top .qa_6 a{background-color:#750006; border:1px #750006 solid;}
+.answer_top .qa_6 a:hover{ background-color:#FFF; border:1px #750006 solid; color:#750006;}
+.answer_top .qa_6 a.on{ background-color:#FFF; border:1px #750006 solid; color:#750006;}
+
+.answer_top .qa_7 a{background-color:#9a0106; border:1px #9a0106 solid;}
+.answer_top .qa_7 a:hover{ background-color:#FFF; border:1px #9a0106 solid; color:#9a0106;}
+.answer_top .qa_7 a.on{ background-color:#FFF; border:1px #9a0106 solid; color:#9a0106;}
+
+.answer_top .qa_8 a{background-color:#750006; border:1px #750006 solid;}
+.answer_top .qa_8 a:hover{ background-color:#FFF; border:1px #750006 solid; color:#750006;}
+.answer_top .qa_8 a.on{ background-color:#FFF; border:1px #750006 solid; color:#750006;}
+
+
+.answer_top .qa_9 a{background-color:#460003; border:1px #460003 solid;}
+.answer_top .qa_9 a:hover{ background-color:#FFF; border:1px #460003 solid; color:#460003;}
+.answer_top .qa_9 a.on{ background-color:#FFF; border:1px #460003 solid; color:#460003;}
+
+.til{ width:100%; height:35px; line-height:35px; border:1px #e3e3e3 solid; border-width:0px 0px 1px 0px; text-align:left; color:#000; font-size:14px; text-indent:1em; margin:20px 0px 0px 0px;}
+.til_icon_on{ width:100%; height:35px; line-height:35px; border:1px #e3e3e3 solid; border-width:0px 0px 1px 0px; text-align:left; color:#000; font-size:14px; text-indent:1em; margin:20px 0px 0px 0px; background: url(../images/icon_top02.png) no-repeat right center; cursor:pointer;}
+.til_icon_un{ width:100%; height:35px; line-height:35px; border:1px #e3e3e3 solid; border-width:0px 0px 1px 0px; text-align:left; color:#000; font-size:14px; text-indent:1em; margin:20px 0px 0px 0px; background: url(../images/icon_down02.png) no-repeat right center; cursor:pointer;}
+.content{ width:100%; border-top:0px; background-color:#FFF; text-align:left; color:#585858; font-size:12px; padding:10px 0px;}
+.content a{ font-size:12px; color:#e60013; text-decoration:underline;}
+.content a:hover{ font-size:12px; color:#e60013;}
+.content p{ width:95%; line-height:25px; margin:0px 0px 0px 20px;}
+.content .font_size{ font-size:16px; line-height:30px; margin:10px 0px 0px 20px;}
+.content .span_width{ clear:both; width:150px; height:25px; line-height:25px; margin:0px; color:#e60013; display:inline-block;}
+
+a{text-decoration: none;color:#000000;}
+ul li{display:inline}
+h4{font-size:24px;}

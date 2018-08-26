@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+.container{position:relative;width:1024px;height:auto;position:relative;top:8px;margin:0 auto;overflow:hidden;cursor:default;}
+.order_form{position:relative;float:left;width:800px;height:auto;border-style:solid;}
+
+.form_title{width:1024px;height:40px;text-align:center;font-size:36px;}
+
+
+.food_title{background:#87CEEB;position:relative;width:800px;height:40px;font-size:24px;text-align:center;}
+.food_titlename{position:relative;float:left;width:300px;height:40px;}
+.food_titlenumber{position:relative;float:left;margin-left:32px;width:100px;height:40px;}
+.food_titlemoney{position:relative;float:left;margin-left:32px;width:100px;height:40px;}
+.food_titleallmoney{position:relative;float:left;margin-left:32px;width:100px;height:40px;}
+
+
+
+.food{position:relative;width:790px;height:40px;overflow:hidden;font-size:24px;}
+.food_name{position:relative;float:left;width:300px;height:40px;text-align:left;}
+.food_del{position:relative;float:left;width:24px;margin-left:32px;height:40px;text-align:center;}
+.food_number{position:relative;float:left;width:52px;height:40px;text-align:center;}
+.food_add{position:relative;float:left;width:24px;height:40px;text-align:center;}
+.food_yuan{position:relative;float:left;width:24px;height:40px;text-align:center;}
+.food_money{position:relative;float:left;width:100px;height:40px;text-align:right;}
+.food_allmoney{position:relative;float:left;margin-left:32px;width:100px;height:40px;text-align:right;}
+.food_delete{position:relative;float:left;left:45px;width:32px;height:40px;text-align:right;color:#FF0000;}
+.form_right{position:relative;float:right;width:200px;height:400px;}
+.user{position:relative;float:left;width:500px;height:70px;}
+.time{position:relative;float:left;width:120px;margin-top:20px;height:50px;font-size:24px;}
+.yn{position:relative;float:left;margin-top:20px;width:24px;height:50px;font-size:24px;}
+.time_popup{position:relative;float:left;margin-top:20px;margin-left:40px;width:400px;height:50px;font-size:24px;display:none;}
+.time_but{position:relative;float:left;width:800px;height:50px;font-size:24px;text-align:center;}
+.time_buttom{background:#87CEEB;position:relative;float:left;width:200px;height:30px;top:10px;left:100px;font-size:24px;text-align:center;}
+
+.time_address{position:relative;float:left;width:300px;margin-top:20px;height:50px;font-size:24px;text-align:left;}
+.time_buttom:hover{border:1px #87CEEB solid;}
+#yes{color:#000000;float:left;}
+#yes:hover{color:#FF0000;}
+#no{color:#FF0000;display:none; float:left;}
+.allmoney{position:relative;float:right;margin-top:20px;width:200px;height:100px;font-size:24px;}
+a{text-decoration: none;color:#000000;}
+ul li{display:inline}

@@ -1,0 +1,131 @@
+@charset "utf-8";
+body{background:#EEEEEE}
+.container{width:1024px;min-height:250px;height:auto;margin: 0 auto;overflow:hidden;}
+.title{width:1024px;height:90px;margin:0 auto;overflow:hidden;cursor:default;}
+.title_logo{
+width:200px;
+height:100px;
+position:relative;
+float:left; 
+}
+.title_fgroup{
+position:relative;
+float:right;
+width:824px;
+height:100px;	
+}
+
+.fgroup_a{
+width:824px;
+heigth:30px;
+position:relative;
+float:left;
+font-size:12px;
+}
+.title_welcome{
+width:200px;
+height:30px;
+position:relative;
+float:left;
+text-align:center;
+font-size:12px;
+}
+.title_title_register{position:relative;float:left;width:100px;height:30px;left:230px;}
+.title_title_login{position:relative;float:left;width:50px;height:30px;left:280px;}
+.title_title_order{position:relative;float:left;width:50px;height:30px;left:300px;}
+.title_title_collection{position:relative;float:left;width:50px;height:30px;left:350px;}
+.fgroup_b{
+position:relative;
+float:left;
+margin-top:0px;
+background:#87CEEB;
+width:824px;
+height:70px;
+}
+
+.index{
+border-radius:20px;
+border:outset;
+position:relative;
+text-align:center;
+width:150px;
+height:30px;
+margin-top:10px;
+padding-top:5px;
+margin-left:90px;
+float:left;
+background:#87CEEB;
+font-size:24px;
+}
+.index:hover{background:#FFFFFF;}
+.ready{background:#FFFFFF;}
+.left{
+	cursor:default;
+position:relative;
+font-size:36px;
+top:40px;
+width:200px;
+height:500px;
+float:left;
+overflow:inherit;
+text-align:center;
+
+}
+.left_button{
+font-size:24px;
+border-radius:20px;
+border:outset;
+position:relative;
+text-align:center;
+left:25px;
+bottom:10px;
+margin-top:30px;
+width:150px;
+height:30px;
+background:#87CEEB;
+float:left;
+padding-top:5px;
+}
+.left_button:hover{background:#FFFFFF;}
+
+.main{
+position:relative;
+float:left;
+width:1024px;
+height:auto;
+overflow:hidden;
+border-style:solid 2px;
+margin-top:40px;
+margin-left:20px;
+}
+.main_1{
+position:relative;
+float:left;
+width:790px;
+height:auto;
+overflow:hidden;
+border-style:solid 2px;
+margin-top:20px;
+margin-left:10px;
+border-left:2px #87CEEB solid;
+}
+
+
+
+.last{
+	width:1024px;
+	height:160px;
+	position:relative;
+	top:4px;
+	margin:0 auto;
+	text-align:center;
+	overflow:hidden;
+}
+
+.pic{width:500px; height:90px; background-image:url(../img/logo.png); background-repeat:no-repeat; float:left; margin-left:20px;}
+.tel{width:300px; height:50px; font-size:24px; float:right; margin-right:20px; margin-top:16px;}
+.detail{width:100%; text-align:center; margin:5px; float:left; font:bold;}
+.list{width:auto; height:auto; float:left; margin-left:20px;}
+.copyright{width:300px; height:auto; float:right; margin-right:20px;}
+a{text-decoration: none;color:#000000;}
+ul li{display:inline}

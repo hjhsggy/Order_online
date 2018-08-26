@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+img{position:absolute;
+left:400px;
+top:300px;
+	padding-bottom:1px;
+	}
+#position1{
+position:absolute;
+left:460px;
+top:300px;}
+#position2{
+position:absolute;
+left:900px;
+top:300px;}
+
+#position3{
+	position: absolute;
+	left: 400px;
+	top: 363px;
+	}
+a{text}

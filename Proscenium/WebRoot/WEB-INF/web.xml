@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>WebCook</display-name>
+  <servlet>
+    <description>顾客登陆使用</description>
+    <display-name>顾客登陆命令</display-name>
+    <servlet-name>customloginServlet</servlet-name>
+    <servlet-class>com.order.online.web.customloginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>主页获取或删除session</description>
+    <display-name>使用session</display-name>
+    <servlet-name>useSessionServlet</servlet-name>
+    <servlet-class>com.order.online.web.useSessionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>用户将表单数据填充进行注册</description>
+    <display-name>用户注册</display-name>
+    <servlet-name>customRegisterServlet</servlet-name>
+    <servlet-class>com.order.online.web.customRegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>用户将表单数据填充进行注册</description>
+    <display-name>获取食物清单</display-name>
+    <servlet-name>GetfoodorderServlet</servlet-name>
+    <servlet-class>com.order.online.web.GetfoodorderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>打开个人主页</description>
+    <display-name>登陆个人主页</display-name>
+    <servlet-name>People_indexServlet</servlet-name>
+    <servlet-class>com.order.online.web.People_indexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>等待后台制作完成</description>
+    <display-name>等待完成</display-name>
+    <servlet-name>order_arrivalServlet</servlet-name>
+    <servlet-class>com.order.online.web.order_arrivalServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>等待评价</description>
+    <display-name>等待评价/主页</display-name>
+    <servlet-name>order_indexServlet</servlet-name>
+    <servlet-class>com.order.online.web.order_indexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>等待评价</description>
+    <display-name>历史订单</display-name>
+    <servlet-name>order_okServlet</servlet-name>
+    <servlet-class>com.order.online.web.order_okServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>等待评价</description>
+    <display-name>等待送达</display-name>
+    <servlet-name>order_readyServlet</servlet-name>
+    <servlet-class>com.order.online.web.order_readyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>等待评价</description>
+    <display-name>等待确认</display-name>
+    <servlet-name>order_rightServlet</servlet-name>
+    <servlet-class>com.order.online.web.order_rightServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>等待评价</description>
+    <display-name>删除订单</display-name>
+    <servlet-name>order_delServlet</servlet-name>
+    <servlet-class>com.order.online.web.order_delServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>等待评价</description>
+    <display-name>订单评价</display-name>
+    <servlet-name>order_pingjiaServlet</servlet-name>
+    <servlet-class>com.order.online.web.order_pingjiaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>等待评价</description>
+    <display-name>查看留言</display-name>
+    <servlet-name>people_messageServlet</servlet-name>
+    <servlet-class>com.order.online.web.people_messageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>等待评价</description>
+    <display-name>查看留言</display-name>
+    <servlet-name>people_addmessageServlet</servlet-name>
+    <servlet-class>com.order.online.web.people_addmessageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>等待评价</description>
+    <display-name>订单</display-name>
+    <servlet-name>orderServlet</servlet-name>
+    <servlet-class>com.order.online.web.orderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>等待评价</description>
+    <display-name>提交订单</display-name>
+    <servlet-name>ordergetServlet</servlet-name>
+    <servlet-class>com.order.online.web.ordergetServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>等待评价</description>
+    <display-name>提交订单</display-name>
+    <servlet-name>modmimaServlet</servlet-name>
+    <servlet-class>com.order.online.web.modmimaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>等待评价</description>
+    <display-name>提交订单</display-name>
+    <servlet-name>peopleGetaddress</servlet-name>
+    <servlet-class>com.order.online.web.peopleGetaddress</servlet-class>
+  </servlet>
+  <servlet>
+    <description>等待评价</description>
+    <display-name>提交订单</display-name>
+    <servlet-name>people_addaddressServlet</servlet-name>
+    <servlet-class>com.order.online.web.people_addaddressServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>等待评价</description>
+    <display-name>提交订单</display-name>
+    <servlet-name>people_deladdressServlet</servlet-name>
+    <servlet-class>com.order.online.web.people_deladdressServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>等待评价</description>
+    <display-name>提交订单</display-name>
+    <servlet-name>people_updaddressServlet</servlet-name>
+    <servlet-class>com.order.online.web.people_updaddressServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>customloginServlet</servlet-name>
+    <url-pattern>/customlogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>useSessionServlet</servlet-name>
+    <url-pattern>/useSession</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>customRegisterServlet</servlet-name>
+    <url-pattern>/customRegister</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetfoodorderServlet</servlet-name>
+    <url-pattern>/menu</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>People_indexServlet</servlet-name>
+    <url-pattern>/people_index</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>order_arrivalServlet</servlet-name>
+    <url-pattern>/people_order_arrival</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>order_indexServlet</servlet-name>
+    <url-pattern>/people_order_index</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>order_okServlet</servlet-name>
+    <url-pattern>/people_order_ok</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>order_readyServlet</servlet-name>
+    <url-pattern>/people_order_ready</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>order_rightServlet</servlet-name>
+    <url-pattern>/people_order_right</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>order_delServlet</servlet-name>
+    <url-pattern>/order_del</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>order_pingjiaServlet</servlet-name>
+    <url-pattern>/order_pingjia</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>people_messageServlet</servlet-name>
+    <url-pattern>/people_message</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>people_addmessageServlet</servlet-name>
+    <url-pattern>/people_addmessage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>orderServlet</servlet-name>
+    <url-pattern>/order</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ordergetServlet</servlet-name>
+    <url-pattern>/orderget</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>modmimaServlet</servlet-name>
+    <url-pattern>/people_modpassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>peopleGetaddress</servlet-name>
+    <url-pattern>/modaddress</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>people_addaddressServlet</servlet-name>
+    <url-pattern>/people_addaddress</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>people_deladdressServlet</servlet-name>
+    <url-pattern>/people_deladdress</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>people_updaddressServlet</servlet-name>
+    <url-pattern>/people_updaddress</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

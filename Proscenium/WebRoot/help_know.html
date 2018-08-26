@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>咥了么-用户须知</title>
+<link href="src/css/help.css" rel="stylesheet" type="text/css">
+<link href="src/css/head.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+
+
+<body>
+
+<!--版头 -->
+<div class="title">
+  <a href="index.html"><div class="title_logo"></div></a>
+  <div class="title_title">
+    <div class="title_title_collection"><a href="javascript:void(0);" onclick="AddFavorite('百度','http://www.baidu.com')" title="收藏本站到收藏夹">收藏我们</a></div>
+  </div>
+  <div class="title_functiongroup">
+    <h3>常见问题</h3>  
+  </div>
+</div>
+<script type="text/javascript">
+function AddFavorite(title, url) {
+	try {window.external.addFavorite(url, title);}
+	catch (e) 
+	{
+		try {window.sidebar.addPanel(title, url, "");}
+		catch (e) 
+		{
+			alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+		}
+	}
+}
+</script>
+
+<div class="line"></div>
+
+
+<div class="container">
+  <div class="help_me">
+    <div class="txt"><a href="help.html"><div class="bor">网站条款</div></a></div>
+    <div class="txt"><a href="help_qa.html"><div class="bor">常见问题</div></a></div>
+    <div class="txt"><a href="help_know.html"><div class="bor use">订餐须知</div></a></div>
+    <div class="txt"><a href="help_pay.html"><div class="bor">支付方式</div></a></div>
+  </div>
+  
+  <div class="answer">
+    <div class="answer_con">
+    <h4>网站条款</h4>
+<P>请填写常用的电子邮箱或手机登录，阅读并同意《用户协议》后，填写送餐信息（包括顾客姓名、送餐联系电话、送餐地址等）并选择送餐时间后进入菜单点餐。
+<P>从左侧菜单点击类别（如主食，冷饮等），然后选择您喜爱的餐点，输入份数，点击"订购"，该餐点就被加入右侧的"我的订单"。
+<P>"我的订单"中将罗列您的点餐内容和金额，可点击取消或增减某项餐点，也可点击进入"下一步"。
+<P>请再次检查您的订单，如订餐内容和金额符合优惠项目的享用条件，您可在自动列出的优惠项目中直接点选，未选视为自动放弃。然后再检查送餐信息是否有误，或添加其他送餐要求，如增加一个临时的送餐联系人和电话等。
+<P>我们提供了货到现金付款，网上支付（包括网上银行和支付宝即时到账交易）两种支付结算，请任选其一，然后提交您的订单。如果您在订餐或网上支付过程中花费时间较长，可能导致您的送餐/外带时间顺延。
+    </div>
+  </div>
+</div>
+<div style="clear:both"></div>
+<div class="line"></div>
+<div class="last">
+	<div class="pic"></div>
+	<div class="tel">订餐电话：123456789</div>
+	<div class="detail">咥了么宅急送不同时段产品品项及价格有所不同。工作日特惠午餐只在部分时段供应。详情以输入送餐地址后显示的实际供应的菜单为准</div>
+	<span class="list">|&nbsp;&nbsp;&nbsp;&nbsp;<a href="">帮助中心</a></span>
+	<span class="list">|&nbsp;&nbsp;&nbsp;&nbsp;<a href="">会员中心</a></span>
+	<span class="list">|&nbsp;&nbsp;&nbsp;&nbsp;<a href="">网站条款</a></span>
+	<span class="list">|&nbsp;&nbsp;&nbsp;&nbsp;<a href="">站点首页</a>&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+	<div class="copyright">版权所有 鄠邑区西安石油大学计算机学院</div>
+</div>
+</body>
+</html>
